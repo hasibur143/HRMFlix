@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,40 +7,67 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>HRM Flix</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#movies">Movies</a></li>
-                <li><a href="#categories">Categories</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="hero">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>HRM Flix</h1>
+            <p>Your Ultimate Movie Destination</p>
+            <button class="btn">Explore Movies</button>
+        </div>
     </header>
+    
     <main>
-        <section id="home">
-            <h2>Welcome to HRM Flix</h2>
-            <p>Your one-stop platform for movies and TV shows.</p>
-        </section>
-        <section id="movies">
-            <h2>Featured Movies</h2>
-            <div class="movie-grid">
-                <!-- Movie cards go here -->
+        <!-- Genres Section -->
+        <section class="genres">
+            <h2>Explore Genres</h2>
+            <div class="genre-grid">
+                <div class="genre-card">
+                    <img src="action.jpg" alt="Action" />
+                    <p>Action</p>
+                </div>
+                <div class="genre-card">
+                    <img src="drama.jpg" alt="Drama" />
+                    <p>Drama</p>
+                </div>
+                <div class="genre-card">
+                    <img src="comedy.jpg" alt="Comedy" />
+                    <p>Comedy</p>
+                </div>
+                <div class="genre-card">
+                    <img src="horror.jpg" alt="Horror" />
+                    <p>Horror</p>
+                </div>
             </div>
         </section>
-        <section id="categories">
-            <h2>Categories</h2>
-            <ul>
-                <li>Bollywood</li>
-                <li>Hollywood</li>
-                <li>Korean</li>
-                <li>Anime</li>
-            </ul>
+        
+        <!-- Top Picks Section -->
+        <section class="top-picks">
+            <h2>Top Picks for You</h2>
+            <div class="movie-slider">
+                <div class="movie-card">
+                    <img src="movie1.jpg" alt="Movie 1" />
+                    <p>Movie 1</p>
+                </div>
+                <div class="movie-card">
+                    <img src="movie2.jpg" alt="Movie 2" />
+                    <p>Movie 2</p>
+                </div>
+                <div class="movie-card">
+                    <img src="movie3.jpg" alt="Movie 3" />
+                    <p>Movie 3</p>
+                </div>
+                <div class="movie-card">
+                    <img src="movie4.jpg" alt="Movie 4" />
+                    <p>Movie 4</p>
+                </div>
+            </div>
         </section>
     </main>
+    
     <footer>
         <p>&copy; 2024 HRM Flix. All rights reserved.</p>
     </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
